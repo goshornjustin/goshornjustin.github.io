@@ -102,3 +102,21 @@ h6 {
   align-self: start;
   justify-content: space-evenly;
 }
+
+#resume {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(155, 163, 167);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+.resume-text-cont{
+  text-align: center;
+  align-items: center;
+}
+
+li {
+  padding: 5px 10px 5px 10px;
+}
