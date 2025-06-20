@@ -4,129 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ad0d2d0fa4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Hello!</title>
   </head>
-  <body id="background">
-    <section class="title-section">
-      <div>
+  <body class="body" id="background">
+    <section class="topnav-section">
+      <div class="topnav">
+        <a href="#Home">Home</a>
+        <a href="./pages/resume.html">Resume</a>
+        <a href="./pages/about.html">About</a>
+        <a href="./pages/projects.html">Projects</a>
+        <a href="./pages/contact.html">Contact</a>
+        <a class="icon" href="javascript:void(0);" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+      </div>
+      <!-- <div>
         <img
           class="header-image"
           src="./images/antelope_island.jpg"
           alt="vibrant colored scenery"
         />
         <h3 class="title-text">Hello!</h3>
-      </div>
+      </div> -->
     </section>
-    <section class="hello-section">
-      <div class="profile-container">
-        <div>
-          <img
-            class="profile-image"
-            src="./images/dog_img.jpg"
-            alt="Golden Retriever"
-          />
-          <h4>My name is Justin</h4>
-          <h6></h6>
-        </div>
-      </div>
-    </section>
-    <section class="skills-section">
-      <div>
-        <div class="container">
-          <h5 class="skills-text">
-            I am incredibly interested in Mobile Development, Game Development,
-            statistical analyses and mathematics. I have recently began learning
-            Web Development.
-          </h5>
-        </div>
-        <div class="container">
-          <h5 class="container-text">
-            I also love to live an active lifestyle. I enjoy running, lifting
-            weights, and cross training. I enjoy spending my free time with
-            friends and family.
-          </h5>
-        </div>
-      </div>
-    </section>
-    <section class="-portfolio-section">
-      <div class="container">
-        <!-- <p>To check out what I'm currently working on or to view my previous projects. Check out my <a href="http://">Github</a>.</p>
-        <div>
-          <h4>Mobile Projects</h4>
-          <h5>Nutrition Tracker Application</h5>
-          <p>Descr</p>
-          <h5>Video Chat Application</h5>
-          <p>Descr</p>
-        </div>
-        <h4>Web Projects</h4>
-        <h4>The Big 3 LLC Website</h4>
-        <p>Redesign the website. Add the descr</p> -->
-        <h4>My Portfolio</h4>
-        <p class="container-text">
-          View my <a href="./pages/resume.html">resume</a>.
-        </p>
-        <h5>Mobile App Projects</h5>
-        <div class="list">
-          <ul>
-            <!-- <li>
-              NTWKD
-              <ul>
-                <li>
-                  A Flutter mobile application that allows users to create a
-                  mobile QR contact card to share with other app users and non
-                  app users. Users can create multiple cards, customize QR code
-                  and more.
-                </li>
-                <li>Available on Android and iOS.</li>
-              </ul>
-            </li> -->
-            <li>
-              Nutrition Tracker Application
-              <ul>
-                <li>
-                  A mobile application written in Flutter that allows users to
-                  add daily meals, macronutrients, create and track weight
-                  goals, find workout plans and track calories burned from
-                  exercise. Features Riverpod, Firebase, and uses Open Food
-                  Facts API as the food database.
-                  <a href="https://github.com/ItsYaBoyJG/FitnessApp/tree/main"
-                    >Github</a
-                  >.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Video Chat Application
-              <ul>
-                <li>
-                  A mobile application written in Flutter that allows users to
-                  video chat with friends in app messaging between friends and
-                  users, as well as share pictures and videos with friends.
-                  Features Riverpod, Firebase, and StreamVideo.
-                  <ul>
-                    <li>
-                      <a
-                        href="https://github.com/ItsYaBoyJG/ChatApp/blob/main/chat_app_w_stream_video/README.md"
-                        >Github</a
-                      >.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="contact-section">
+    <div class="home-layout">
+      <nav class="">
+        <ul class="social-icons" style="list-style-type: none">
+          <li>
+            <a class="a-link" id="sci" href="mailto:goshornjustin3@gmail.com"
+              ><i class="fa fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a class="a-link" id="sci" href="https://github.com/ItsYaBoyJG"
+              ><i class="fa fa-github"></i
+            ></a>
+          </li>
+          <!-- <li>
+            <a class="a-link" id="sci" href=""><i class="fa fa-x-twitter"></i></a>
+          </li> -->
+          <li>
+            <a
+              class="a-link"
+              id="sci"
+              href="https://www.linkedin.com/in/justin-g-494652230"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          <!-- <li></li> -->
+        </ul>
+      </nav>
+      <main class="main-content">
+        <section class="hello-section">
+          <div class="profile-container">
+            <div>
+              <img
+                class="profile-image"
+                src="./assets/images/preston.jpg"
+                alt="Black Labrador"
+              />
+              <h3>Hi there! 👋</h3>
+            </div>
+          </div>
+        </section>
+        <section class="p-section">
+          <p class="p-text">
+            My name is Justin. I'm a mobile developer with two years of
+            professional experience working with Flutter. I am incredibly
+            interested in Mobile Development, web development, and statistics. I
+            have recently began learning game development. I also love to live
+            an active lifestyle. I enjoy running, lifting weights, and cross
+            training. I love big dogs. In my free time I like to spend time with
+            my friends and family.
+          </p>
+        </section>
+
+        <section class="p-section">
+          <p class="p-text">
+            I'm available for freelancing work. I specialize and offer services
+            in cross platform mobile devlopment. I offer both front-end and
+            back-end services. Please check out my portfolio to see my previous
+            projects. If you are interested in hiring me, or want to speak about
+            your project or idea. Feel free to contact me!
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <!-- <section class="contact-section">
       <div class="container">
         <h4>Get in touch!</h4>
         <div class="links-container">
-          <a href="mailto:">Email</a>
-          <a href="http://">LinkedIn</a>
-          <!-- <a href="http://">Github</a> -->
+          <a class="a-link" href="mailto:">Email</a>
+          <a class="a-link" href="http://">LinkedIn</a>
+          <!-- <a href="http://">Github</a> 
         </div>
       </div>
-    </section>
+    </section> -->
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
