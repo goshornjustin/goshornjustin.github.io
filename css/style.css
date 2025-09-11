@@ -563,11 +563,11 @@ nav {
 /* Contact Section */
 .contact {
   background: var(--gradient);
-  color: white;
+  color: var(--accent-blue);
 }
 
 .contact .section-title {
-  color: white;
+  color: var(--accent-blue);
 }
 
 .contact .section-title::after {
