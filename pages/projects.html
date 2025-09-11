@@ -4,100 +4,426 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ad0d2d0fa4.js" crossorigin="anonymous"></script>
-    <title>Projects</title>
+    <title>Projects - Justin Goshorn</title>
+    <meta name="description" content="Explore Justin Goshorn's mobile development projects including NTWKD, fitness apps, and more">
 </head>
-<body class="body" id="background">
-  <section class="title-section">
-      <div class="topnav">
-        <a href="../index.html">Home</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./about.html">About</a>
-        <a href="#">Projects</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-      <!-- <div>
-        <img
-          class="header-image"
-          src="./images/antelope_island.jpg"
-          alt="vibrant colored scenery"
-        />
-        <h3 class="title-text">Hello!</h3>
-      </div> -->
-    </section> 
-    <section class="-p-section">
-          <div class="container">
-            <!-- <p>To check out what I'm currently working on or to view my previous projects. Check out my <a href="http://">Github</a>.</p>
-        <div>
-          <h4>Mobile Projects</h4>
-          <h5>Nutrition Tracker Application</h5>
-          <p>Descr</p>
-          <h5>Video Chat Application</h5>
-          <p>Descr</p>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <a href="../index.html" class="logo">Justin</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="#projects" class="active">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./resume.html">Resume</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-        <h4>Web Projects</h4>
-        <h4>The Big 3 LLC Website</h4>
-        <p>Redesign the website. Add the descr</p> -->
-            <h3>My Portfolio</h3>
-            <p class="p-text">
-              View my <a class="a-link" href="./pages/resume.html">resume</a>.
-            </p>
-            <h3>Mobile App Projects</h3>
-            <div class="list">
-              <ul>
-                <!-- <li>
-              NTWKD
-              <ul>
-                <li>
-                  A Flutter mobile application that allows users to create a
-                  mobile QR contact card to share with other app users and non
-                  app users. Users can create multiple cards, customize QR code
-                  and more.
-                </li>
-                <li>Available on Android and iOS.</li>
-              </ul>
-            </li> -->
-                <li>
-                  Nutrition Tracker Application
-                  <ul>
-                    <li>
-                      A mobile application written in Flutter that allows users
-                      to add daily meals, macronutrients, create and track
-                      weight goals, find workout plans and track calories burned
-                      from exercise. Features Riverpod, Firebase, and uses Open
-                      Food Facts API as the food database.
-                      <a
-                        class="a-link"
-                        href="https://github.com/ItsYaBoyJG/FitnessApp/tree/main"
-                        >Github</a
-                      >.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Video Chat Application
-                  <ul>
-                    <li>
-                      A mobile application written in Flutter that allows users
-                      to video chat with friends in app messaging between
-                      friends and users, as well as share pictures and videos
-                      with friends. Features Riverpod, Firebase, and
-                      StreamVideo.
-                      <ul>
-                        <li>
-                          <a
-                            class="a-link"
-                            href="https://github.com/ItsYaBoyJG/ChatApp/blob/main/chat_app_w_stream_video/README.md"
-                            >Github</a
-                          >.
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Mobile applications and web projects I've built</p>
+        </div>
+    </section>
+
+    <!-- Projects Content -->
+    <div class="page-content">
+        <!-- Professional Projects -->
+        <section class="resume-section">
+            <h2>Professional Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">📲</div>
+                    <div class="project-content">
+                        <h3>NTWKD - Contact Card App</h3>
+                        <p>A professional networking mobile application built for The Big 3 LLC that allows users to create up to 5 unique contact cards with custom QR codes. Successfully launched and maintained on both App Store and Google Play Store with active user base.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">QR Codes</span>
+                            <span class="tag">Material 3</span>
+                            <span class="tag">Production</span>
+                        </div>
+                        <div style="margin: 1rem 0;">
+                            <h4>Key Features:</h4>
+                            <ul style="margin-left: 1.5rem; color: var(--neutral-600);">
+                                <li>Create and customize up to 5 unique contact cards</li>
+                                <li>Generate custom QR codes for easy sharing</li>
+                                <li>Social media and website integration</li>
+                                <li>Photo integration for contact cards</li>
+                                <li>Export contacts to phone contacts</li>
+                                <li>Subscription model with secure payments</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://apps.apple.com/us/app/ntwkd/id6465403912" class="project-link">App Store →</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.Morgana.youCard&hl=en_US" class="project-link">Google Play →</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </section>
+
+        <!-- Personal Projects -->
+        <section class="resume-section">
+            <h2>Personal Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">🏃‍♂️</div>
+                    <div class="project-content">
+                        <h3>Comprehensive Fitness App</h3>
+                        <p>A feature-rich Flutter mobile application for fitness enthusiasts to track nutrition, workouts, goals, and health metrics. Implements clean architecture with modern development practices and comprehensive offline support.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Riverpod</span>
+                            <span class="tag">Hive</span>
+                            <span class="tag">OpenFoodFacts API</span>
+                            <span class="tag">FL Chart</span>
+                        </div>
+                        <div style="margin: 1rem 0;">
+                            <h4>Features:</h4>
+                            <ul style="margin-left: 1.5rem; color: var(--neutral-600);">
+                                <li>Daily meal planning and macro tracking</li>
+                                <li>Calendar-based nutrition history</li>
+                                <li>Food database search with OpenFoodFacts API</li>
+                                <li>Weight tracking with interactive charts</li>
+                                <li>Calorie burn monitoring and goal setting</li>
+                                <li>Pre-built workout routines and programs</li>
+                                <li>Offline-capable with local data persistence</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsYaBoyJG/FitnessApp" class="project-link">GitHub →</a>
+                            <a href="#" class="project-link">Live Demo →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">💬</div>
+                    <div class="project-content">
+                        <h3>Video Chat Application</h3>
+                        <p>Real-time video chat mobile application with multiple streaming options using Getstream.io. Features comprehensive communication tools including in-app messaging, media sharing, and cross-platform compatibility.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">StreamVideo</span>
+                            <span class="tag">WebRTC</span>
+                            <span class="tag">Real-time</span>
+                        </div>
+                        <div style="margin: 1rem 0;">
+                            <h4>Features:</h4>
+                            <ul style="margin-left: 1.5rem; color: var(--neutral-600);">
+                                <li>Two different video streaming implementations</li>
+                                <li>High-quality, low-latency video calls</li>
+                                <li>In-app messaging between users</li>
+                                <li>Media sharing capabilities (photos/videos)</li>
+                                <li>Cross-platform support (iOS/Android)</li>
+                                <li>User-friendly interface with smooth animations</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsYaBoyJG/ChatApp" class="project-link">GitHub →</a>
+                            <a href="#" class="project-link">Documentation →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">💡</div>
+                    <div class="project-content">
+                        <h3>Developer Daily Inspiration</h3>
+                        <p>A web application that provides daily inspiration and motivation for developers. Built with modern web technologies focusing on performance optimization and responsive design across all device sizes.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div style="margin: 1rem 0;">
+                            <h4>Features:</h4>
+                            <ul style="margin-left: 1.5rem; color: var(--neutral-600);">
+                                <li>Daily inspirational content for developers</li>
+                                <li>Responsive design for all screen sizes</li>
+                                <li>Dynamic content generation</li>
+                                <li>Interactive user interface</li>
+                                <li>Performance optimized loading</li>
+                                <li>Cross-browser compatibility</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsYaBoyJG/DevDailyInspoCard" class="project-link">GitHub →</a>
+                            <a href="#" class="project-link">Live Site →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">🌐</div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Modern, responsive portfolio website showcasing projects and skills. Built with clean HTML/CSS/JavaScript, featuring smooth animations, mobile-first design, and optimal performance across all devices.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                            <span class="tag">GitHub Pages</span>
+                        </div>
+                        <div style="margin: 1rem 0;">
+                            <h4>Features:</h4>
+                            <ul style="margin-left: 1.5rem; color: var(--neutral-600);">
+                                <li>Modern design system with CSS custom properties</li>
+                                <li>Smooth scroll animations and interactions</li>
+                                <li>Mobile-first responsive design</li>
+                                <li>Search engine optimized</li>
+                                <li>Fast loading performance</li>
+                                <li>Accessible design patterns</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsYaBoyJG/itsyaboyjg.github.io" class="project-link">GitHub →</a>
+                            <a href="https://itsyaboyjg.github.io" class="project-link">Live Site →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Achievements -->
+        <section class="resume-section">
+            <h2>Technical Achievements</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #4CAF50;"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Production Apps</h3>
+                    <p>Successfully deployed and maintained mobile applications on both App Store and Google Play with active user bases and positive reviews.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #2196F3;"><i class="fas fa-code"></i></div>
+                    <h3>Clean Architecture</h3>
+                    <p>Implemented modular, scalable code structures following SOLID principles and modern Flutter development practices.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #FF9800;"><i class="fas fa-tools"></i></div>
+                    <h3>Full Stack Integration</h3>
+                    <p>Complete mobile development pipeline from UI/UX implementation to backend integration and app store deployment.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #9C27B0;"><i class="fas fa-chart-line"></i></div>
+                    <h3>Performance Optimization</h3>
+                    <p>Focus on app performance, including offline capabilities, efficient state management, and optimized user experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Used -->
+        <section class="resume-section">
+            <h2>Technologies & Tools</h2>
+            <div class="about-content">
+                <p class="p-text">
+                    Throughout these projects, I've worked with a comprehensive tech stack covering mobile development, 
+                    backend services, testing, and deployment. Here's a breakdown of the key technologies I use:
+                </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                <div>
+                    <h4 style="color: var(--primary-600); margin-bottom: 1rem;">Mobile Development</h4>
+                    <div class="interests">
+                        <div class="interest-item">Flutter</div>
+                        <div class="interest-item">Dart</div>
+                        <div class="interest-item">Material 3</div>
+                        <div class="interest-item">iOS</div>
+                        <div class="interest-item">Android</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--primary-600); margin-bottom: 1rem;">Backend & Cloud</h4>
+                    <div class="interests">
+                        <div class="interest-item">Firebase</div>
+                        <div class="interest-item">Firestore</div>
+                        <div class="interest-item">Firebase Auth</div>
+                        <div class="interest-item">REST APIs</div>
+                        <div class="interest-item">Cloud Functions</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--primary-600); margin-bottom: 1rem;">State Management</h4>
+                    <div class="interests">
+                        <div class="interest-item">Riverpod</div>
+                        <div class="interest-item">Hooks Riverpod</div>
+                        <div class="interest-item">Provider</div>
+                        <div class="interest-item">State Management</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--primary-600); margin-bottom: 1rem;">Storage & Data</h4>
+                    <div class="interests">
+                        <div class="interest-item">Hive</div>
+                        <div class="interest-item">SharedPreferences</div>
+                        <div class="interest-item">SQLite</div>
+                        <div class="interest-item">Local Storage</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--primary-600); margin-bottom: 1rem;">Testing & Quality</h4>
+                    <div class="interests">
+                        <div class="interest-item">Unit Testing</div>
+                        <div class="interest-item">Widget Testing</div>
+                        <div class="interest-item">Integration Testing</div>
+                        <div class="interest-item">CI/CD</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--primary-600); margin-bottom: 1rem;">Development Tools</h4>
+                    <div class="interests">
+                        <div class="interest-item">Git</div>
+                        <div class="interest-item">GitHub</div>
+                        <div class="interest-item">VS Code</div>
+                        <div class="interest-item">Android Studio</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Projects -->
+        <section class="resume-section">
+            <h2>What's Next?</h2>
+            <div class="about-content">
+                <p class="p-text">
+                    I'm always working on new projects and exploring emerging technologies. Currently, I'm expanding into 
+                    game development while continuing to refine my mobile development expertise. I'm particularly interested 
+                    in advanced Flutter concepts like custom render objects and platform channels.
+                </p>
+                <p class="p-text">
+                    If you have an interesting project idea or want to collaborate on something innovative, I'd love to hear from you!
+                </p>
+            </div>
+            
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="./contact.html" class="btn btn-primary">
+                    <i class="fas fa-handshake"></i>
+                    Let's Collaborate
+                </a>
+                <a href="../index.html#projects" class="btn btn-secondary">
+                    <i class="fas fa-home"></i>
+                    Back to Home
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Justin Goshorn. Built with passion and lots of coffee ☕</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = navToggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    const icon = navToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+        }
+
+        // Navigation scroll effect
+        window.addEventListener("scroll", () => {
+            const nav = document.querySelector("nav");
+            if (window.scrollY > 50) {
+                nav.style.background = "rgba(255, 255, 255, 0.98)";
+                nav.style.borderBottom = "1px solid var(--neutral-300)";
+            } else {
+                nav.style.background = "rgba(255, 255, 255, 0.95)";
+                nav.style.borderBottom = "1px solid var(--neutral-200)";
+            }
+        });
+
+        // Fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Initialize fade-in animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Observe all fade-in elements
+            document.querySelectorAll(".fade-in").forEach((element) => {
+                observer.observe(element);
+            });
+            
+            // Add staggered animation delay for project cards
+            document.querySelectorAll(".projects-grid .project-card").forEach((card, index) => {
+                card.style.transitionDelay = `${index * 0.15}s`;
+            });
+        });
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    const navHeight = document.querySelector('nav').offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

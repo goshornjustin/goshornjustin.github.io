@@ -1,145 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ad0d2d0fa4.js" crossorigin="anonymous"></script>
-    <title>Resume</title>
-  </head>
-  <body id="resume">
-    <section class="title-section">
-      <div class="topnav">
-        <a href="../index.html">Home</a>
-        <a href="#Resume">Resume</a>
-        <a href="./about.html">About</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-      <!-- <div>
-        <img
-          class="header-image"
-          src="./images/antelope_island.jpg"
-          alt="vibrant colored scenery"
-        />
-        <h3 class="title-text">Hello!</h3>
-      </div> -->
+    <title>Resume - Justin Goshorn</title>
+    <meta name="description" content="Justin Goshorn's professional resume - Mobile Developer with 2+ years of Flutter experience">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <a href="../index.html" class="logo">Justin</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#resume" class="active">Resume</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Resume</h1>
+            <p>Mobile Developer & Flutter Specialist</p>
+        </div>
     </section>
-    <h1>Justin Goshorn's Resume</h1>
-    <p class="resume-text-cont">
-      goshornjustin3@gmail.com
-      <a href="http://www.linkedin.com/in/justin-goshorn-494652230">Linkedin</a>
-    </p>
-    <hr />
-    <h3>Education</h3>
-    <h5>
-      Penn State University | Bachelor of Science Information Systems |
-      Application Development Concentration
-    </h5>
-    <hr />
-    <h3>Technical Skills</h3>
-    <h5>
-      MS Office | Git | SQL | Statistical Analysis | A/B Testing | Unit Tests |
-      | NoSQL| Mobile Development | Flutter |iOS | Android | MVC Design |
-      Firebase | Amplify | HTML | CSS | JavaScript
-    </h5>
-    <hr />
-    <h3>Professional Experience</h3>
-    <h4>The Big 3 LLC</h4>
-    <h5>
-      Mobile Developer
-    </h5>
-    <ul>
-        <li>
-          Developed mobile applications following UI/UX designs using Flutter &
-          Dart.
-        </li>
-        <li>
-          Integrated Firebase (Auth, Firestore, AppCheck, Analytics) for app
-          backend, security and bug tracking. Implemented offline storage using
-          Hive and SharedPreferences.
-        </li>
-        <li>
-          Implemented deeplinking APIs for navigation to app stores and user attribution
-          statistics.
-        </li>
-        <li>
-          Implemented barcode and QR code scanning for sharing within
-          application and for app deep link navigation.
-        </li>
-        <li>Implemented modern UI with Material 3 design principles.</li>
-        <li>
-          Created custom unit, widget, and integration tests, as well as used
-          CI/CD tools to ensure app functionality and completeness.
-        </li>
-        <li>Used Riverpod for application state management.</li>
-        <li>
-          Focused on modular architecture and clean design to ensure app
-          scalability and testability.
-        </li>
-        <li>
-          Implemented Flutter and native code where necessary, to request
-          permissions and access platform specific functionality such as camera,
-          contacts, health data.
-        </li>
-        <li>
-          NTWKD (Live)
-          <ul>
-            <li>
-              Mobile application that allows users to create a mobile QR contact
-              card to share with other app users and non app users. Users can
-              create multiple cards, customize QR code and more. Available on
-              Google Play and Apple App Store.
-            </li>
-          </ul>
-        </li>
-      </ul>
-    <h4>TDS Telecom</h4>
-    <h5>
-      Intern Tech
-    </h5>
-    <ul>
-        <li>Created Power Automate flows to automate emails and reports.</li>
-        <li>
-          Optimized SQL queries to manipulate data for reports used by
-          stakeholders to improve reporting process to company executives.
-        </li>
-        <li>
-          Worked with software engineers to design, test and debug enhancements
-          to web applications used by the staff.
-        </li>
-        <li>
-          Assisted in data migration, verification and integration within
-          different company databases and systems.
-        </li>
-      </ul>
-    <hr />
-    <h3>Personal Projects</h3>
-      <ul>
-        Nutrition Tracking Application
-        <li>
-          A mobile application written in Flutter that allows users to add daily
-          meals, macronutrients, create and track weight goals, find workout
-          plans and track calories burned from exercise. Features Riverpod,
-          Firebase, and uses Open Food Facts API as the food database.
-          <a href="https://github.com/ItsYaBoyJG/FitnessApp">Github</a>
-        </li>
-      </ul>
-      <ul>
-        Video Chat Application
-        <li>
-          A mobile application written in Flutter that allows users to video
-          chat with friends in app messaging between friends and users, as well
-          as share pictures and videos with friends. Features Riverpod,
-          Firebase, and StreamVideo.
-          <a href="https://github.com/ItsYaBoyJG/ChatApp">Github</a>
-        </li>
-      </ul>
-    <hr />
-  </body>
-  <footer class="resume-text-cont">
-    <h5>Contact</h5>
-    <a href="http://www.linkedin.com/in/justin-goshorn-494652230">Linkedin</a>
-    <a href="mailto:goshornjustin3@gmail.com">Email</a>
-  </footer>
+
+    <!-- Resume Content -->
+    <div class="page-content">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p><strong>Justin Goshorn</strong></p>
+            <p>goshornjustin3@gmail.com</p>
+            <a href="https://www.linkedin.com/in/justin-goshorn-494652230">LinkedIn</a> |
+            <a href="https://github.com/ItsYaBoyJG">GitHub</a> |
+            <a href="https://www.upwork.com/freelancers/~01538dd0ddc5607aa1">Upwork</a>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-section">
+            <h2>Education</h2>
+            <h3>Penn State University</h3>
+            <h4>Bachelor of Science, Information Systems</h4>
+            <p><strong>Concentration:</strong> Application Development</p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="resume-section">
+            <h2>Technical Skills</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                <div>
+                    <h4>Mobile Development</h4>
+                    <p>Flutter, Dart, iOS, Android, Cross-platform</p>
+                </div>
+                <div>
+                    <h4>Backend & Database</h4>
+                    <p>Firebase, Firestore, SQL, NoSQL, REST APIs</p>
+                </div>
+                <div>
+                    <h4>Architecture & Patterns</h4>
+                    <p>Clean Architecture, MVC, Riverpod, State Management</p>
+                </div>
+                <div>
+                    <h4>Development Tools</h4>
+                    <p>Git, CI/CD, Testing, Hive, SharedPreferences</p>
+                </div>
+                <div>
+                    <h4>Web Technologies</h4>
+                    <p>HTML5, CSS3, JavaScript, Progressive Web Apps</p>
+                </div>
+                <div>
+                    <h4>Analytics & Testing</h4>
+                    <p>A/B Testing, Unit Testing, Statistical Analysis</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="resume-section">
+            <h2>Professional Experience</h2>
+            
+            <div class="mb-8">
+                <h3>The Big 3 LLC</h3>
+                <h4>Mobile Developer</h4>
+                <p><em>2+ Years Experience</em></p>
+                
+                <ul>
+                    <li>Developed mobile applications following UI/UX designs using Flutter & Dart for cross-platform deployment</li>
+                    <li>Integrated Firebase ecosystem (Auth, Firestore, AppCheck, Analytics) for backend services, security, and analytics tracking</li>
+                    <li>Implemented offline storage solutions using Hive and SharedPreferences for enhanced user experience</li>
+                    <li>Developed deep linking APIs for seamless navigation to app stores and comprehensive user attribution statistics</li>
+                    <li>Implemented barcode and QR code scanning functionality for in-app sharing and deep link navigation</li>
+                    <li>Applied Material 3 design principles to create modern, accessible user interfaces</li>
+                    <li>Created comprehensive testing suites including unit, widget, and integration tests with CI/CD integration</li>
+                    <li>Utilized Riverpod for scalable application state management across complex app architectures</li>
+                    <li>Focused on modular architecture and clean design patterns to ensure app scalability and maintainability</li>
+                    <li>Implemented Flutter and native code integration for platform-specific functionality including camera, contacts, and health data access</li>
+                </ul>
+
+                <div class="mt-4">
+                    <h4>Key Project: NTWKD (Live Production App)</h4>
+                    <ul>
+                        <li>Mobile application enabling users to create up to 5 unique QR contact cards for professional networking</li>
+                        <li>Features custom QR code generation, social media integration, and seamless contact sharing</li>
+                        <li>Successfully launched and maintained on both Google Play Store and Apple App Store</li>
+                        <li>Implemented subscription model with secure payment processing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h3>TDS Telecom</h3>
+                <h4>Intern Tech</h4>
+                <p><em>Internship Experience</em></p>
+                
+                <ul>
+                    <li>Created Power Automate flows to automate email workflows and generate automated reports</li>
+                    <li>Optimized SQL queries for data manipulation and report generation used by stakeholders and company executives</li>
+                    <li>Collaborated with software engineers to design, test, and debug enhancements to internal web applications</li>
+                    <li>Assisted in data migration, verification, and integration across different company databases and systems</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Personal Projects -->
+        <div class="resume-section">
+            <h2>Personal Projects</h2>
+            
+            <div class="mb-6">
+                <h3>Comprehensive Fitness Application</h3>
+                <p>A feature-rich Flutter mobile application for fitness enthusiasts to track nutrition, workouts, goals, and health metrics</p>
+                <ul>
+                    <li>Implemented clean architecture with feature-based organization and functional programming using FpDart</li>
+                    <li>Integrated OpenFoodFacts API for comprehensive food database and nutrition tracking</li>
+                    <li>Built offline-capable design with Hive for local storage and data persistence</li>
+                    <li>Created interactive charts and progress visualization using FL Chart library</li>
+                    <li>Utilized Hooks Riverpod for modern state management and GoRouter for navigation</li>
+                </ul>
+                <p><strong>Technologies:</strong> Flutter, Firebase, Riverpod, Hive, OpenFoodFacts API, FL Chart</p>
+                <p><a href="https://github.com/ItsYaBoyJG/FitnessApp">GitHub Repository</a></p>
+            </div>
+
+            <div class="mb-6">
+                <h3>Video Chat Application</h3>
+                <p>Real-time video chat mobile application with multiple streaming options and comprehensive communication features</p>
+                <ul>
+                    <li>Implemented two different video streaming approaches using Getstream.io's video package</li>
+                    <li>Built in-app messaging system with media sharing capabilities</li>
+                    <li>Created cross-platform compatibility with Flutter for iOS and Android deployment</li>
+                    <li>Integrated WebRTC for high-quality, low-latency video communication</li>
+                </ul>
+                <p><strong>Technologies:</strong> Flutter, Dart, StreamVideo, WebRTC, Real-time Communication</p>
+                <p><a href="https://github.com/ItsYaBoyJG/ChatApp">GitHub Repository</a></p>
+            </div>
+
+            <div class="mb-6">
+                <h3>Developer Daily Inspiration Web App</h3>
+                <p>Web application providing daily motivation and inspiration for developers</p>
+                <ul>
+                    <li>Built responsive web design with modern HTML5, CSS3, and JavaScript</li>
+                    <li>Implemented dynamic content generation and interactive user interface</li>
+                    <li>Focused on performance optimization and cross-browser compatibility</li>
+                </ul>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Responsive Design</p>
+                <p><a href="https://github.com/ItsYaBoyJG/DevDailyInspoCard">GitHub Repository</a></p>
+            </div>
+        </div>
+
+        <!-- Certifications / Additional Info -->
+        <div class="resume-section">
+            <h2>Professional Highlights</h2>
+            <ul>
+                <li>Successfully launched and maintain production mobile applications with thousands of users</li>
+                <li>Experienced in full mobile development lifecycle from conception to deployment</li>
+                <li>Strong focus on code quality, testing, and maintainable architecture</li>
+                <li>Proven ability to work with modern development tools and CI/CD pipelines</li>
+                <li>Active contributor to open-source projects and continuous learner of new technologies</li>
+                <li>Available for freelance mobile development projects</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Justin Goshorn. Built with passion and lots of coffee ☕</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = navToggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    const icon = navToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+        }
+
+        // Navigation scroll effect
+        window.addEventListener("scroll", () => {
+            const nav = document.querySelector("nav");
+            if (window.scrollY > 50) {
+                nav.style.background = "rgba(255, 255, 255, 0.98)";
+                nav.style.borderBottom = "1px solid var(--neutral-300)";
+            } else {
+                nav.style.background = "rgba(255, 255, 255, 0.95)";
+                nav.style.borderBottom = "1px solid var(--neutral-200)";
+            }
+        });
+    </script>
+</body>
 </html>

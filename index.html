@@ -1,108 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/ad0d2d0fa4.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Hello!</title>
-  </head>
-  <body class="body" id="background">
-    <section class="topnav-section">
-      <div class="topnav">
-        <a href="#Home">Home</a>
-        <a href="./pages/resume.html">Resume</a>
-        <a href="./pages/about.html">About</a>
-        <a href="./pages/projects.html">Projects</a>
-        <a href="./pages/contact.html">Contact</a>
-        <a class="icon" href="javascript:void(0);" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
-      </div>
-      <!-- <div>
-        <img
-          class="header-image"
-          src="./images/antelope_island.jpg"
-          alt="vibrant colored scenery"
-        />
-        <h3 class="title-text">Hello!</h3>
-      </div> -->
-    </section>
-    <div class="home-layout">
-      <nav class="">
-        <ul class="social-icons" style="list-style-type: none">
-          <li>
-            <a class="a-link" id="sci" href="mailto:goshornjustin3@gmail.com"
-              ><i class="fa fa-envelope"></i
-            ></a>
-          </li>
-          <li>
-            <a class="a-link" id="sci" href="https://github.com/ItsYaBoyJG"
-              ><i class="fa fa-github"></i
-            ></a>
-          </li>
-          <!-- <li>
-            <a class="a-link" id="sci" href=""><i class="fa fa-x-twitter"></i></a>
-          </li> -->
-          <li>
-            <a
-              class="a-link"
-              id="sci"
-              href="https://www.linkedin.com/in/justin-g-494652230"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-          </li>
-          <!-- <li></li> -->
-        </ul>
-      </nav>
-      <main class="main-content">
-        <section class="hello-section">
-          <div class="profile-container">
-            <div>
-              <img
-                class="profile-image"
-                src="./assets/images/preston.jpg"
-                alt="Black Labrador"
-              />
-              <h3>Hi there! 👋</h3>
-            </div>
-          </div>
-        </section>
-        <section class="p-section">
-          <p class="p-text">
-            My name is Justin. I'm a mobile developer with two years of
-            professional experience working with Flutter. I am incredibly
-            interested in Mobile Development, web development, and statistics. I
-            have recently began learning game development. I also love to live
-            an active lifestyle. I enjoy running, lifting weights, and cross
-            training. I love big dogs. In my free time I like to spend time with
-            my friends and family.
-          </p>
-        </section>
-
-        <section class="p-section">
-          <p class="p-text">
-            I'm available for freelancing work. I specialize and offer services
-            in cross platform mobile devlopment. I offer both front-end and
-            back-end services. Please check out my portfolio to see my previous
-            projects. If you are interested in hiring me, or want to speak about
-            your project or idea. Feel free to contact me!
-          </p>
-        </section>
-      </main>
-    </div>
-
-    <!-- <section class="contact-section">
-      <div class="container">
-        <h4>Get in touch!</h4>
-        <div class="links-container">
-          <a class="a-link" href="mailto:">Email</a>
-          <a class="a-link" href="http://">LinkedIn</a>
-          <!-- <a href="http://">Github</a> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad0d2d0fa4.js" crossorigin="anonymous"></script>
+    <title>Justin Goshorn - Mobile Developer & Flutter Specialist</title>
+    <meta name="description" content="Mobile developer specializing in Flutter with 2+ years of professional experience. Creating beautiful, cross-platform applications.">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <a href="#home" class="logo">Justin</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-      </div>
-    </section> -->
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="./assets/images/preston.jpg" alt="Justin's Profile" class="profile-image">
+                <h1>Hi, I'm Justin! 👋</h1>
+                <p class="subtitle">Mobile Developer & Flutter Specialist</p>
+                <p class="description">
+                    I'm a passionate mobile developer with 2+ years of professional Flutter experience at The Big 3 LLC. 
+                    I create beautiful, cross-platform mobile applications and love exploring new technologies 
+                    in mobile development, web development, and game development.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>Expert in Flutter and Dart with 2+ years of professional experience. Building cross-platform apps with beautiful UI/UX, Firebase integration, and modern architecture patterns like Riverpod.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🏗️</div>
+                    <h3>App Architecture</h3>
+                    <p>Clean Architecture implementation, modular design, state management with Riverpod, offline storage with Hive, and comprehensive testing strategies.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Backend Integration</h3>
+                    <p>Firebase services (Auth, Firestore, AppCheck, Analytics), REST APIs, deep linking implementation, and CI/CD pipeline integration for robust app deployment.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Modern web applications using HTML5, CSS3, JavaScript, and responsive design principles. Experience with Progressive Web Apps and modern frameworks.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">📊</div>
+                    <h3>Data & Analytics</h3>
+                    <p>SQL optimization, statistical analysis, A/B testing, and data-driven decision making. Experience with Power Automate and business intelligence tools.</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">🎮</div>
+                    <h3>Game Development</h3>
+                    <p>Currently exploring game development, bringing interactive experiences to life with creative programming and innovative design concepts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">📲</div>
+                    <div class="project-content">
+                        <h3>NTWKD - Contact Card App</h3>
+                        <p>Professional networking app that allows users to create up to 5 unique contact cards with custom QR codes. Built for The Big 3 LLC and available on both App Store and Google Play.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">QR Codes</span>
+                            <span class="tag">Material 3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://apps.apple.com/us/app/ntwkd/id6465403912" class="project-link">App Store →</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.Morgana.youCard&hl=en_US" class="project-link">Google Play →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">🏃‍♂️</div>
+                    <div class="project-content">
+                        <h3>Comprehensive Fitness App</h3>
+                        <p>A feature-rich Flutter application for fitness enthusiasts to track nutrition, workouts, goals, and health metrics. Includes offline support, charts, and clean architecture.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Riverpod</span>
+                            <span class="tag">Hive</span>
+                            <span class="tag">OpenFoodFacts API</span>
+                            <span class="tag">FL Chart</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsYaBoyJG/FitnessApp" class="project-link">GitHub →</a>
+                            <a href="#" class="project-link">Live Demo →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">💬</div>
+                    <div class="project-content">
+                        <h3>Video Chat Application</h3>
+                        <p>Real-time video chat mobile app with multiple streaming options using Getstream.io. Features in-app messaging, media sharing, and cross-platform compatibility.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">StreamVideo</span>
+                            <span class="tag">WebRTC</span>
+                            <span class="tag">Real-time</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsYaBoyJG/ChatApp" class="project-link">GitHub →</a>
+                            <a href="#" class="project-link">Documentation →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">💡</div>
+                    <div class="project-content">
+                        <h3>Developer Daily Inspiration</h3>
+                        <p>A web application that provides daily inspiration and motivation for developers. Built with modern web technologies and responsive design.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsYaBoyJG/DevDailyInspoCard" class="project-link">GitHub →</a>
+                            <a href="#" class="project-link">Live Site →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">🌐</div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Modern, responsive portfolio website showcasing projects and skills with smooth animations, clean design, and optimal performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                            <span class="tag">GitHub Pages</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsYaBoyJG/itsyaboyjg.github.io" class="project-link">GitHub →</a>
+                            <a href="https://itsyaboyjg.github.io" class="project-link">Live Site →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">🏢</div>
+                    <div class="project-content">
+                        <h3>The Big 3 LLC Projects</h3>
+                        <p>Professional mobile development work including NTWKD and other client applications. Focus on Material 3 design, Firebase integration, and production-ready code.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Professional</span>
+                            <span class="tag">Production</span>
+                            <span class="tag">CI/CD</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.thebig3llc.com/" class="project-link">Company →</a>
+                            <a href="./pages/resume.html" class="project-link">Experience →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I'm a mobile developer with a passion for creating exceptional user experiences. 
+                    With 2+ years of professional Flutter development at The Big 3 LLC, I've helped bring 
+                    innovative mobile applications to life, including NTWKD which is live on both app stores.
+                </p>
+                <p>
+                    My expertise spans the entire mobile development lifecycle - from UI/UX implementation 
+                    to backend integration, testing, and deployment. I'm passionate about clean architecture, 
+                    modern development practices, and staying current with the latest technologies.
+                </p>
+                <p>
+                    When I'm not coding, you'll find me staying active through running, weightlifting, 
+                    and cross-training. I love spending time with big dogs (like Preston in my photo!), 
+                    and enjoying quality time with friends and family.
+                </p>
+                <div class="interests">
+                    <div class="interest-item">🏃‍♂️ Running</div>
+                    <div class="interest-item">🏋️‍♂️ Weight Lifting</div>
+                    <div class="interest-item">🐕 Dog Lover</div>
+                    <div class="interest-item">👥 Social</div>
+                    <div class="interest-item">🎮 Gaming</div>
+                    <div class="interest-item">📚 Continuous Learning</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <p>
+                    I'm currently available for freelance mobile development work and always excited to discuss new projects. 
+                    Whether you need a Flutter app, want to discuss innovative ideas, or are looking for a dedicated mobile developer, 
+                    I'd love to hear from you!
+                </p>
+                <div class="cta-buttons">
+                    <a href="mailto:goshornjustin3@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Send Email
+                    </a>
+                    <a href="./pages/resume.html" class="btn btn-secondary">
+                        <i class="fas fa-file-alt"></i>
+                        View Resume
+                    </a>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <a href="https://www.linkedin.com/in/justin-goshorn-494652230" class="btn btn-secondary" style="margin: 0 0.5rem;">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/ItsYaBoyJG" class="btn btn-secondary" style="margin: 0 0.5rem;">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~01538dd0ddc5607aa1" class="btn btn-secondary" style="margin: 0 0.5rem;">
+                        <i class="fas fa-briefcase"></i>
+                        Upwork
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Justin Goshorn. Built with passion and lots of coffee ☕</p>
+        </div>
+    </footer>
+
     <script src="./scripts/index.js"></script>
-  </body>
+</body>
 </html>

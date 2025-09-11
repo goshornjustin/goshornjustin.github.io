@@ -4,47 +4,271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ad0d2d0fa4.js" crossorigin="anonymous"></script>
-    <title>Contact Me</title>
+    <title>Contact Me - Justin Goshorn</title>
+    <meta name="description" content="Get in touch with Justin Goshorn - Available for freelance mobile development projects">
 </head>
-<body class="body" id="background">
-<section class="topnav-section">
-      <div class="topnav">
-        <a href="../index.html">Home</a>
-        <a href="./pages/resume.html">Resume</a>
-        <a href="./pages/about.html">About</a>
-        <a href="./pages/projects.html">Projects</a>
-        <a href="#Contact">Contact</a>
-        <a class="icon" href="javascript:void(0);" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
-      </div>
-      <!-- <div>
-        <img
-          class="header-image"
-          src="./images/antelope_island.jpg"
-          alt="vibrant colored scenery"
-        />
-        <h3 class="title-text">Hello!</h3>
-      </div> -->
-    </section>
-     <section class="contact-section">
-           <p class="p-text">
-            I can be found on <a class="a-link" href="http://www.linkedin.com/in/justin-g-494652230">LinkedIn</a>
-            if you are interested in connecting.    
-             <p class="p-text">
-        I am available as a freelance mobile developer hire. I can be found on both the 
-        <a class="a-link" href="https://www.upwork.com/freelancers/~01538dd0ddc5607aa1?s=996364627857502209">UpWork</a>
-        and <a class="a-link" href="https://www.fiverr.com/s/xXVWlDx">Fiverr</a> websites. 
-      </p> 
-      <p class="p-text">
-        You may also contact me via email.  <a class="a-link" id="sci" href="mailto:goshornjustin3@gmail.com"
-              ><i class="fa fa-envelope"></i
-            ></a>
-      </p>
-     </section>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <a href="../index.html" class="logo">Justin</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#contact" class="active">Contact</a></li>
+                <li><a href="./resume.html">Resume</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Let's Work Together</h1>
+            <p>Available for freelance mobile development projects</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <div class="page-content">
+        <!-- Introduction -->
+        <section class="resume-section text-center">
+            <h2>Ready to Start Your Next Project?</h2>
+            <div class="about-content" style="max-width: 700px; margin: 0 auto;">
+                <p class="p-text">
+                    I'm currently available for freelance mobile development work and always excited to discuss new projects. 
+                    Whether you need a Flutter app, want to discuss innovative ideas, or are looking for a dedicated mobile developer, 
+                    I'd love to hear from you!
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Methods -->
+        <section class="resume-section">
+            <h2>How to Reach Me</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #ea4335;"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>For project inquiries, questions, or just to say hello. I typically respond within 24 hours.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="mailto:goshornjustin3@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Send Email
+                        </a>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #0077b5;"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me professionally. Great for networking and staying updated with my latest projects.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://www.linkedin.com/in/justin-goshorn-494652230" class="btn btn-primary">
+                            <i class="fab fa-linkedin"></i>
+                            Connect
+                        </a>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #333;"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>Explore my open-source projects, contributions, and code samples. See my development style.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/ItsYaBoyJG" class="btn btn-primary">
+                            <i class="fab fa-github"></i>
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Freelance Platforms -->
+        <section class="resume-section">
+            <h2>Freelance Platforms</h2>
+            <div class="about-content">
+                <p class="p-text">
+                    I'm available as a freelance mobile developer on several platforms. Feel free to reach out through 
+                    your preferred platform for project discussions and collaborations.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #14a800;"><i class="fas fa-briefcase"></i></div>
+                    <h3>Upwork</h3>
+                    <p>Hire me for your mobile development projects. View my profile, reviews, and portfolio.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://www.upwork.com/freelancers/~01538dd0ddc5607aa1" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Upwork Profile
+                        </a>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon" style="background: #1dbf73;"><i class="fas fa-handshake"></i></div>
+                    <h3>Fiverr</h3>
+                    <p>Browse my mobile development services and packages. Quick turnaround for smaller projects.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://www.fiverr.com/s/xXVWlDx" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Fiverr Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Can Help With -->
+        <section class="resume-section">
+            <h2>What I Can Help With</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div class="interest-item" style="padding: 1.5rem; background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); border: 1px solid var(--neutral-200);">
+                    📱 <strong>Flutter App Development</strong><br>
+                    Cross-platform mobile applications with beautiful UI and robust functionality
+                </div>
+                <div class="interest-item" style="padding: 1.5rem; background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); border: 1px solid var(--neutral-200);">
+                    🏗️ <strong>App Architecture</strong><br>
+                    Clean, scalable code structure with modern patterns and state management
+                </div>
+                <div class="interest-item" style="padding: 1.5rem; background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); border: 1px solid var(--neutral-200);">
+                    ☁️ <strong>Backend Integration</strong><br>
+                    Firebase setup, API integration, and cloud service implementation
+                </div>
+                <div class="interest-item" style="padding: 1.5rem; background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); border: 1px solid var(--neutral-200);">
+                    🧪 <strong>Testing & Quality Assurance</strong><br>
+                    Comprehensive testing strategies including unit, widget, and integration tests
+                </div>
+                <div class="interest-item" style="padding: 1.5rem; background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); border: 1px solid var(--neutral-200);">
+                    🚀 <strong>App Store Deployment</strong><br>
+                    End-to-end app publishing process for both iOS and Android platforms
+                </div>
+                <div class="interest-item" style="padding: 1.5rem; background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); border: 1px solid var(--neutral-200);">
+                    💡 <strong>Technical Consulting</strong><br>
+                    Code reviews, architecture planning, and technology stack recommendations
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Time -->
+        <section class="resume-section" style="text-center;">
+            <h2>Response Time</h2>
+            <div class="about-content" style="max-width: 600px; margin: 0 auto;">
+                <p class="p-text">
+                    I understand that time is crucial for your projects. I strive to respond to all inquiries within 
+                    24 hours during weekdays and 48 hours on weekends. For urgent projects, please mention it in your 
+                    initial message and I'll prioritize my response.
+                </p>
+                <div style="margin-top: 2rem; padding: 2rem; background: var(--primary-50); border-radius: var(--radius-xl); border: 1px solid var(--primary-200);">
+                    <h3 style="color: var(--primary-700); margin-bottom: 1rem;">⚡ Quick Response Guarantee</h3>
+                    <p style="color: var(--primary-600); margin: 0;">
+                        Email responses within 24 hours • Project quotes within 48 hours • Always professional and detailed communication
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="contact section" style="border-radius: var(--radius-2xl); margin: var(--space-16) 0;">
+            <div class="container">
+                <h2 class="section-title">Ready to Get Started?</h2>
+                <div class="contact-content">
+                    <p>
+                        Whether you have a detailed project specification or just an idea you'd like to explore, 
+                        I'm here to help bring your mobile app vision to life. Let's discuss how we can work together 
+                        to create something amazing!
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="mailto:goshornjustin3@gmail.com?subject=Project%20Inquiry" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Start a Project
+                        </a>
+                        <a href="./resume.html" class="btn btn-secondary">
+                            <i class="fas fa-file-alt"></i>
+                            View My Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Justin Goshorn. Built with passion and lots of coffee ☕</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = navToggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    const icon = navToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+        }
+
+        // Navigation scroll effect
+        window.addEventListener("scroll", () => {
+            const nav = document.querySelector("nav");
+            if (window.scrollY > 50) {
+                nav.style.background = "rgba(255, 255, 255, 0.98)";
+                nav.style.borderBottom = "1px solid var(--neutral-300)";
+            } else {
+                nav.style.background = "rgba(255, 255, 255, 0.95)";
+                nav.style.borderBottom = "1px solid var(--neutral-200)";
+            }
+        });
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    const navHeight = document.querySelector('nav').offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
-<!-- 
- -->
-
