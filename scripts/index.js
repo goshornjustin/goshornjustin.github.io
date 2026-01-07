@@ -162,3 +162,88 @@ preloadImages.forEach(src => {
   const img = new Image();
   img.src = src;
 });
+
+// Image Carousel Functionality
+class Carousel {
+  constructor(carouselId) {
+    this.carouselId = carouselId;
+    this.track = document.querySelector(`[data-carousel="${carouselId}"]`);
+    this.slides = Array.from(this.track.children);
+    this.indicatorsContainer = document.querySelector(`[data-carousel-indicators="${carouselId}"]`);
+    this.prevButton = document.querySelector(`[data-carousel-control="${carouselId}"].prev`);
+    this.nextButton = document.querySelector(`[data-carousel-control="${carouselId}"].next`);
+    this.currentIndex = 0;
+
+    this.init();
+  }
+
+  init() {
+    // Create indicators
+    this.createIndicators();
+
+    // Set up event listeners
+    this.prevButton.addEventListener('click', () => this.prevSlide());
+    this.nextButton.addEventListener('click', () => this.nextSlide());
+
+    // Update initial state
+    this.updateCarousel();
+
+    // Handle window resize
+    window.addEventListener('resize', () => this.updateCarousel());
+  }
+
+  createIndicators() {
+    this.slides.forEach((_, index) => {
+      const indicator = document.createElement('button');
+      indicator.classList.add('carousel-indicator');
+      indicator.setAttribute('aria-label', `Go to slide ${index + 1}`);
+      indicator.addEventListener('click', () => this.goToSlide(index));
+      this.indicatorsContainer.appendChild(indicator);
+    });
+  }
+
+  updateCarousel() {
+    // Move track
+    const slideWidth = this.slides[0].getBoundingClientRect().width;
+    this.track.style.transform = `translateX(-${this.currentIndex * slideWidth}px)`;
+
+    // Update indicators
+    const indicators = Array.from(this.indicatorsContainer.children);
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle('active', index === this.currentIndex);
+    });
+
+    // Update button states
+    this.prevButton.disabled = this.currentIndex === 0;
+    this.nextButton.disabled = this.currentIndex === this.slides.length - 1;
+  }
+
+  nextSlide() {
+    if (this.currentIndex < this.slides.length - 1) {
+      this.currentIndex++;
+      this.updateCarousel();
+    }
+  }
+
+  prevSlide() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.updateCarousel();
+    }
+  }
+
+  goToSlide(index) {
+    this.currentIndex = index;
+    this.updateCarousel();
+  }
+}
+
+// Initialize all carousels on page load
+document.addEventListener('DOMContentLoaded', () => {
+  // Find all unique carousel IDs
+  const carouselTracks = document.querySelectorAll('[data-carousel]');
+  carouselTracks.forEach(track => {
+    const carouselId = track.getAttribute('data-carousel');
+    new Carousel(carouselId);
+  });
+});
