@@ -247,3 +247,89 @@ document.addEventListener('DOMContentLoaded', () => {
     new Carousel(carouselId);
   });
 });
+
+      // // Mobile Navigation Toggle
+      // const navToggle = document.querySelector(".nav-toggle");
+      // const navLinks = document.querySelector(".nav-links");
+
+      // if (navToggle && navLinks) {
+      //   navToggle.addEventListener("click", () => {
+      //     navLinks.classList.toggle("active");
+      //     const icon = navToggle.querySelector("i");
+      //     if (navLinks.classList.contains("active")) {
+      //       icon.classList.remove("fa-bars");
+      //       icon.classList.add("fa-times");
+      //     } else {
+      //       icon.classList.remove("fa-times");
+      //       icon.classList.add("fa-bars");
+      //     }
+      //   });
+
+      //   // Close mobile menu when clicking on a link
+      //   document.querySelectorAll(".nav-links a").forEach((link) => {
+      //     link.addEventListener("click", () => {
+      //       navLinks.classList.remove("active");
+      //       const icon = navToggle.querySelector("i");
+      //       icon.classList.remove("fa-times");
+      //       icon.classList.add("fa-bars");
+      //     });
+      //   });
+      // }
+
+      // // Navigation scroll effect
+      // window.addEventListener("scroll", () => {
+      //   const nav = document.querySelector("nav");
+      //   if (window.scrollY > 50) {
+      //     nav.style.background = "rgba(255, 255, 255, 0.98)";
+      //     nav.style.borderBottom = "1px solid var(--neutral-300)";
+      //   } else {
+      //     nav.style.background = "rgba(255, 255, 255, 0.95)";
+      //     nav.style.borderBottom = "1px solid var(--neutral-200)";
+      //   }
+      // });
+
+      // // Fade-in animations
+      // const observerOptions = {
+      //   threshold: 0.1,
+      //   rootMargin: "0px 0px -100px 0px",
+      // };
+
+      // const observer = new IntersectionObserver((entries) => {
+      //   entries.forEach((entry) => {
+      //     if (entry.isIntersecting) {
+      //       entry.target.classList.add("visible");
+      //     }
+      //   });
+      // }, observerOptions);
+
+      // // Initialize fade-in animations
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   // Observe all fade-in elements
+      //   document.querySelectorAll(".fade-in").forEach((element) => {
+      //     observer.observe(element);
+      //   });
+
+      //   // Add staggered animation delay for project cards
+      //   document
+      //     .querySelectorAll(".projects-grid .project-card")
+      //     .forEach((card, index) => {
+      //       card.style.transitionDelay = `${index * 0.15}s`;
+      //     });
+      // });
+
+      // // Smooth scrolling for internal links
+      // document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      //   anchor.addEventListener("click", function (e) {
+      //     e.preventDefault();
+      //     const target = document.querySelector(this.getAttribute("href"));
+      //     if (target) {
+      //       const navHeight = document.querySelector("nav").offsetHeight;
+      //       const targetPosition = target.offsetTop - navHeight - 20;
+
+      //       window.scrollTo({
+      //         top: targetPosition,
+      //         behavior: "smooth",
+      //       });
+      //     }
+      //   });
+      // });
