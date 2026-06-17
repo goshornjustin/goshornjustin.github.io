@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,10 +14,11 @@
       src="https://kit.fontawesome.com/ad0d2d0fa4.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts/index.js"></script>
     <title>Justin Goshorn - Mobile Developer & Flutter Specialist</title>
     <meta
       name="description"
-      content="Mobile developer specializing in Flutter with 2+ years of professional experience. Creating beautiful, cross-platform applications."
+      content="Mobile developer with 3+ years of professional experience. Creating beautiful, highly permformant, cross-platform applications."
     />
   </head>
   <body>
@@ -29,6 +30,7 @@
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="./pages/services.html">Services</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -43,18 +45,17 @@
       <div class="container">
         <div class="hero-content">
           <img
-            src="./assets/images/preston.jpg"
+            src="./assets/images/1645490368685.jpg"
             alt="Justin's Profile"
             class="profile-image"
           />
           <h1>Hi, I'm Justin! 👋</h1>
-          <p class="subtitle">Mobile Developer & Flutter Specialist</p>
+          <p class="subtitle">Mobile Developer Consultant</p>
           <p class="description">
-            I'm a passionate mobile developer with 2+ years of professional
-            Flutter experience at The Big 3 LLC. I create beautiful,
-            cross-platform mobile applications and love exploring new
-            technologies in mobile development, web development, and game
-            development.
+            I'm a full-stack developer with 3+ years of professional mobile
+            development experience. I create highly performant, cross-platform
+            applications and love exploring new technologies in mobile
+            development, web development, and game development.
           </p>
           <div class="cta-buttons">
             <a href="#projects" class="btn btn-primary">
@@ -79,28 +80,10 @@
             <div class="skill-icon">📱</div>
             <h3>Mobile Development</h3>
             <p>
-              Expert in Flutter and Dart with 2+ years of professional
+              Expert in Flutter and React Native with 3+ years of professional
               experience. Building cross-platform apps with beautiful UI/UX,
               Firebase integration, and modern architecture patterns like
               Riverpod.
-            </p>
-          </div>
-          <div class="skill-card fade-in">
-            <div class="skill-icon">🏗️</div>
-            <h3>App Architecture</h3>
-            <p>
-              Clean Architecture implementation, modular design, state
-              management with Riverpod, offline storage with Hive, and
-              comprehensive testing strategies.
-            </p>
-          </div>
-          <div class="skill-card fade-in">
-            <div class="skill-icon">☁️</div>
-            <h3>Backend Integration</h3>
-            <p>
-              Firebase services (Auth, Firestore, AppCheck, Analytics), REST
-              APIs, deep linking implementation, and CI/CD pipeline integration
-              for robust app deployment.
             </p>
           </div>
           <div class="skill-card fade-in">
@@ -112,6 +95,24 @@
               and modern frameworks.
             </p>
           </div>
+          <div class="skill-card fade-in">
+            <div class="skill-icon">☁️</div>
+            <h3>Backend Integration</h3>
+            <p>
+              Firebase services (Auth, Firestore, AppCheck, Analytics), REST
+              APIs, deep linking implementation, and CI/CD pipeline integration
+              for robust app deployment.
+            </p>
+          </div>
+          <!-- <div class="skill-card fade-in">
+            <div class="skill-icon">🏗️</div>
+            <h3>App Architecture</h3>
+            <p>
+              Clean Architecture implementation, modular design, state
+              management with Riverpod, offline storage with Hive, and
+              comprehensive testing strategies.
+            </p>
+          </div> -->
           <div class="skill-card fade-in">
             <div class="skill-icon">📊</div>
             <h3>Data & Analytics</h3>
@@ -141,7 +142,7 @@
         <div class="projects-grid">
           <div class="project-card fade-in">
             <div class="project-image">
-              <img src="./assets/portfolio/ntwkd_presentation_1.jpg" alt="" />
+              <img src="./assets/portfolio/ntwkd/ntwkd_presentation_1.jpg" alt="NTWKD contact card app" />
             </div>
             <div class="project-content">
               <h3>NTWKD - Contact Card App</h3>
@@ -177,7 +178,40 @@
           </div>
           <div class="project-card fade-in">
             <div class="project-image">
-              <img src="./assets/portfolio/fit_life_main_card.jpg" alt="" />
+              <img src="./assets/portfolio/fit_life/fit_life_main_card.jpg" alt="" />
+            </div>
+            <div class="project-content">
+              <h3>DP-CQS Weapon Reticle Application</h3>
+              <p>
+                A cross platform mobile application created for and used by
+                military and DoD members to configure digital optics. The
+                application connects to digital optic via its firmware using
+                Bluetooth or USB connection. The user can load weapon profiles
+                with 3 separate reticle configs, edit the reticles and save
+                their changes. Changes would then be sent to the optic's
+                firmware. The app uses a ballistic data library to allow users
+                to configure bullet drop compensation lines on the reticles.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">JSON RPC</span>
+                <span class="tag">Riverpod</span>
+                <span class="tag">Hive</span>
+                <span class="tag">Method Channels</span>
+                <span class="tag">Bluetooth & USB Serial</span>
+                <span class="tag">Firmware Integrations</span>
+              </div>
+              <div class="project-links">
+                <a href="./pages/projects/fitness_app.html" class="project-link"
+                  >Details →</a
+                >
+                <!-- <a href="#" class="project-link">Live Demo →</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-image">
+              <img src="./assets/portfolio/fit_life/fit_life_main_card.jpg" alt="" />
             </div>
             <div class="project-content">
               <h3>Health & Nutrition Intelligence App</h3>
@@ -205,14 +239,14 @@
           </div>
           <div class="project-card fade-in">
             <div class="project-image">
-              <img src="./assets/portfolio/one_tank_main_card.jpg" alt="" />
+              <img src="./assets/portfolio/one_tank/one_tank_main_card.jpg" alt="" />
             </div>
             <div class="project-content">
-              <h3>IoT Monitoring Application</h3>
+              <h3>One-Tank Propane Tank Monitoring App</h3>
               <p>
-                A propane tank monitoring app enabling real-time tracking of
-                tank levels, temperature, and environmental data with
-                intelligent alerts and notifications.
+                The One-Tank propane tank monitoring app enabling real-time
+                tracking of tank levels, temperature, and environmental data
+                with intelligent alerts and notifications.
               </p>
               <div class="project-tags">
                 <span class="tag">Flutter</span>
@@ -233,7 +267,7 @@
           </div>
           <div class="project-card fade-in">
             <div class="project-image">
-              <img src="./assets/portfolio/popstock_main_card.jpg" alt="" />
+              <img src="./assets/portfolio/popstock/popstock_main_card.jpg" alt="" />
             </div>
             <div class="project-content">
               <h3>Educational FinTech Platform</h3>
@@ -280,9 +314,9 @@
         <div class="about-content">
           <p>
             I'm a mobile developer with a passion for creating exceptional user
-            experiences. With 2+ years of professional Flutter development at
-            The Big 3 LLC, I've helped bring innovative mobile applications to
-            life, including NTWKD which is live on both app stores.
+            experiences. With 3+ years of professional development, I've helped
+            bring innovative, and mission-critical mobile applications to life,
+            including NTWKD, One-Tank which both are live on both app stores.
           </p>
           <p>
             My expertise spans the entire mobile development lifecycle - from
@@ -293,8 +327,7 @@
           </p>
           <p>
             When I'm not coding, you'll find me staying active through running,
-            weightlifting, and cross-training. I love spending time with big
-            dogs (like Preston in my photo!), and enjoying quality time with
+            weightlifting, and cross-training. I love spending quality time with
             friends and family.
           </p>
           <div class="interests">
@@ -315,10 +348,10 @@
         <h2 class="section-title">Let's Work Together</h2>
         <div class="contact-content">
           <p>
-            I'm currently available for freelance mobile development work and
-            always excited to discuss new projects. Whether you need a Flutter
-            app, want to discuss innovative ideas, or are looking for a
-            dedicated mobile developer, I'd love to hear from you!
+            I'm currently available for freelance and contract mobile
+            development work and always excited to discuss new projects. Whether
+            you need a Flutter app, want to discuss innovative ideas, or are
+            looking for a dedicated mobile developer, I'd love to hear from you!
           </p>
           <div class="cta-buttons">
             <a href="mailto:goshornjustin3@gmail.com" class="btn btn-primary">
@@ -352,8 +385,24 @@
               class="btn btn-primary"
               style="margin: 0 0.5rem"
             >
-              <i class="fas fa-briefcase"></i>
-              Upwork
+              <i class="fa-brands fa-x-twitter"></i>
+              @yaboyiscoding
+            </a>
+            <a
+              href="https://www.upwork.com/freelancers/~01538dd0ddc5607aa1"
+              class="btn btn-primary"
+              style="margin: 0 0.5rem"
+            >
+              <i class="fa-brands fa-youtube"></i>
+              @yaboyiscoding
+            </a>
+            <a
+              href="https://www.upwork.com/freelancers/~01538dd0ddc5607aa1"
+              class="btn btn-primary"
+              style="margin: 0 0.5rem"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+              @yaboyiscoding
             </a>
           </div>
         </div>
@@ -364,11 +413,9 @@
     <footer>
       <div class="container">
         <p>
-          &copy; 2024 Justin Goshorn. Built with passion and lots of coffee ☕
+          &copy; 2026 Justin Goshorn. Built with passion and lots of coffee ☕
         </p>
       </div>
     </footer>
-
-    <script src="./scripts/index.js"></script>
   </body>
 </html>
