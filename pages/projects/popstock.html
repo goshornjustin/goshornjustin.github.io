@@ -15,10 +15,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="../../scripts/index.js"></script>
-    <title>Wilcox DP-CQS Reticle App | Justin Goshorn</title>
+    <title>PopStock - Educational FinTech Platform | Justin Goshorn</title>
     <meta
       name="description"
-      content="Wilcox Industries DP-CQS case study — a cross-platform Flutter app that configures digital weapon optics over Bluetooth and USB firmware connections."
+      content="PopStock case study — a Flutter stock-market education app for K-12 students with animated lessons, interactive games, and event-driven learning."
     />
   </head>
   <body>
@@ -46,10 +46,8 @@
     <!-- Page Header -->
     <section class="page-header">
       <div class="container">
-        <h1>Wilcox Industries — DP-CQS Reticle App</h1>
-        <p>
-          Cross-platform digital optic configuration over Bluetooth &amp; USB
-        </p>
+        <h1>PopStock — Educational FinTech Platform</h1>
+        <p>Gamified stock-market literacy for K-12 students</p>
       </div>
     </section>
 
@@ -60,12 +58,10 @@
         <h2>Overview</h2>
         <div class="about-content">
           <p class="p-text">
-            A cross-platform mobile application created for and used by a defense
-            client to configure digital optics. The app connects to a
-            digital optic's firmware over Bluetooth or USB, lets users load
-            weapon profiles holding three separate reticle configurations, edit
-            those reticles, and save changes back to the optic. A ballistic data
-            library drives bullet-drop compensation lines on each reticle.
+            PopStock is an innovative stock-market education app for K-12
+            students. It teaches financial literacy through animated lessons,
+            interactive games, and event-driven learning, gamifying the material
+            with trending artist themes to keep young learners engaged.
           </p>
         </div>
 
@@ -84,15 +80,15 @@
           </div>
           <div class="skill-card">
             <h4 style="color: var(--primary-600)">Platforms</h4>
-            <p>iOS &amp; Android (cross-platform)</p>
+            <p>iOS &amp; Android</p>
           </div>
           <div class="skill-card">
             <h4 style="color: var(--primary-600)">Stack focus</h4>
-            <p>Flutter, JSON-RPC, Method Channels, BLE/USB serial</p>
+            <p>Flutter, Flutter Bloc, REST API, GCP</p>
           </div>
           <div class="skill-card">
-            <h4 style="color: var(--primary-600)">Domain</h4>
-            <p>Firmware integration &amp; ballistics</p>
+            <h4 style="color: var(--primary-600)">Audience</h4>
+            <p>K-12 students</p>
           </div>
         </div>
       </section>
@@ -102,62 +98,32 @@
         <h2>Gallery</h2>
         <div class="project-carousel">
           <div class="carousel-container">
-            <div class="carousel-track" data-carousel="wilcox">
+            <div class="carousel-track" data-carousel="popstock">
               <div class="carousel-slide">
                 <img
-                  src="../../assets/portfolio/wilcox/wilcox_1.png"
-                  alt="Wilcox DP-CQS screen 1"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="../../assets/portfolio/wilcox/wilcox_2.png"
-                  alt="Wilcox DP-CQS screen 2"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="../../assets/portfolio/wilcox/wilcox_3.png"
-                  alt="Wilcox DP-CQS screen 3"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="../../assets/portfolio/wilcox/wilcox_4.png"
-                  alt="Wilcox DP-CQS screen 4"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="../../assets/portfolio/wilcox/wilcox_5.png"
-                  alt="Wilcox DP-CQS screen 5"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="../../assets/portfolio/wilcox/wilcox_6.png"
-                  alt="Wilcox DP-CQS screen 6"
+                  src="../../assets/portfolio/popstock/popstock_ui_images.jpg"
+                  alt="PopStock app UI screens"
                 />
               </div>
             </div>
             <div class="carousel-controls">
               <button
                 class="carousel-btn prev"
-                data-carousel-control="wilcox"
+                data-carousel-control="popstock"
                 aria-label="Previous"
               >
                 <i class="fas fa-chevron-left"></i>
               </button>
               <button
                 class="carousel-btn next"
-                data-carousel-control="wilcox"
+                data-carousel-control="popstock"
                 aria-label="Next"
               >
                 <i class="fas fa-chevron-right"></i>
               </button>
             </div>
           </div>
-          <div class="carousel-indicators" data-carousel-indicators="wilcox">
+          <div class="carousel-indicators" data-carousel-indicators="popstock">
             <!-- Indicators generated by JavaScript -->
           </div>
         </div>
@@ -168,23 +134,20 @@
         <h2>The Challenge</h2>
         <div class="about-content">
           <p class="p-text">
-            Configuring a digital optic in the field demands precision and
-            reliability across hardware, with no room for a flaky connection or
-            a mis-saved reticle. The app had to talk directly to optic firmware
-            over multiple transport types and present complex ballistic data in
-            a way that is fast and unambiguous to operate.
+            Financial literacy is rarely taught well to young people, and the
+            stock market in particular can feel abstract and intimidating. The
+            app needed to make investing concepts approachable and genuinely fun
+            for a K-12 audience, without watering down the underlying ideas.
           </p>
         </div>
         <h2>The Solution</h2>
         <div class="about-content">
           <p class="p-text">
-            The app speaks to the optic's firmware over Bluetooth and USB serial
-            using JSON-RPC, with native bridges handled through Method Channels.
-            Weapon profiles — each carrying three reticle configurations — are
-            stored locally with Hive and managed with Riverpod, so edits are
-            responsive and survive disconnects. A ballistic data library
-            computes bullet-drop compensation lines that render directly onto
-            the reticle before being written back to the device.
+            PopStock turns lessons into animated, interactive experiences and
+            event-driven games themed around trending artists, so students learn
+            market mechanics by playing. AI trading bots model market behavior,
+            a REST API on GCP powers the data, and Flutter Bloc keeps the
+            interactive flows predictable and testable.
           </p>
         </div>
       </section>
@@ -193,14 +156,11 @@
       <section class="resume-section">
         <h2>Key Features</h2>
         <ul style="margin-left: 1.5rem; color: var(--neutral-600)">
-          <li>
-            Connects to digital optic firmware via Bluetooth or USB serial
-          </li>
-          <li>Load weapon profiles with 3 separate reticle configurations</li>
-          <li>Edit reticles and save changes back to the optic</li>
-          <li>Ballistic data library for bullet-drop compensation lines</li>
-          <li>Cross-platform iOS and Android support</li>
-          <li>Offline-capable local storage of profiles</li>
+          <li>Animated lessons</li>
+          <li>Interactive games</li>
+          <li>Event-driven learning</li>
+          <li>AI trading bots</li>
+          <li>Trending artist themes</li>
         </ul>
       </section>
 
@@ -209,12 +169,12 @@
         <h2>Tech Stack</h2>
         <div class="project-tags">
           <span class="tag">Flutter</span>
-          <span class="tag">JSON RPC</span>
-          <span class="tag">Riverpod</span>
-          <span class="tag">Hive</span>
-          <span class="tag">Method Channels</span>
-          <span class="tag">Bluetooth &amp; USB Serial</span>
-          <span class="tag">Firmware Integrations</span>
+          <span class="tag">Dart</span>
+          <span class="tag">Flutter Bloc</span>
+          <span class="tag">REST API</span>
+          <span class="tag">GCP</span>
+          <span class="tag">Real-time trading</span>
+          <span class="tag">Alerts and notifications</span>
         </div>
       </section>
 
@@ -223,10 +183,10 @@
         <h2>My Role</h2>
         <div class="about-content">
           <p class="p-text">
-            I built the Flutter application, implementing the JSON-RPC firmware
-            communication layer over Bluetooth and USB through native Method
-            Channels, the profile and reticle editing flows with Riverpod and
-            Hive, and the ballistic-driven reticle rendering.
+            I built the Flutter app — the animated lesson and game flows with
+            Flutter Bloc, integration with the GCP-hosted REST API, and the
+            real-time trading and AI trading-bot interactions that drive the
+            learning experience.
           </p>
         </div>
       </section>

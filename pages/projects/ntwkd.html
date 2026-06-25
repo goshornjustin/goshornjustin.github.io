@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ad0d2d0fa4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../scripts/index.js"></script>
+    <title>NTWKD - Contact Card App | Justin Goshorn</title>
+    <meta
+      name="description"
+      content="NTWKD case study — a production Flutter networking app with custom QR contact cards, launched on the App Store and Google Play for The Big 3 LLC."
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-content">
+        <a href="../../index.html" class="logo">Justin</a>
+        <ul class="nav-links">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li>
+            <a href="../../index.html#projects" class="active">Projects</a>
+          </li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>NTWKD — Contact Card App</h1>
+        <p>
+          Digital networking cards with custom QR codes — live on iOS &amp;
+          Android
+        </p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="page-content">
+      <!-- Overview -->
+      <section class="resume-section">
+        <h2>Overview</h2>
+        <div class="about-content">
+          <p class="p-text">
+            NTWKD is a professional networking app built for The Big 3 LLC that
+            lets users create up to five unique digital contact cards, each with
+            its own custom QR code for instant sharing. It is fully launched and
+            actively maintained on both the App Store and Google Play with a
+            live user base.
+          </p>
+        </div>
+
+        <!-- At a glance -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+          "
+        >
+          <div class="skill-card">
+            <h4 style="color: var(--primary-600)">Role</h4>
+            <p>Mobile developer — The Big 3 LLC</p>
+          </div>
+          <div class="skill-card">
+            <h4 style="color: var(--primary-600)">Platforms</h4>
+            <p>iOS &amp; Android (production)</p>
+          </div>
+          <div class="skill-card">
+            <h4 style="color: var(--primary-600)">Stack focus</h4>
+            <p>Flutter, Firebase, Riverpod, Method Channels</p>
+          </div>
+          <div class="skill-card">
+            <h4 style="color: var(--primary-600)">Status</h4>
+            <p>Shipped &amp; maintained</p>
+          </div>
+        </div>
+
+        <div class="project-links">
+          <a
+            href="https://apps.apple.com/us/app/ntwkd/id6465403912"
+            class="project-link"
+            >App Store →</a
+          >
+          <a
+            href="https://play.google.com/store/apps/details?id=com.Morgana.youCard&hl=en_US"
+            class="project-link"
+            >Google Play →</a
+          >
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="resume-section">
+        <h2>Gallery</h2>
+        <div class="project-carousel">
+          <div class="carousel-container">
+            <div class="carousel-track" data-carousel="ntwkd">
+              <div class="carousel-slide">
+                <img
+                  src="../../assets/portfolio/ntwkd/ntwkd_presentation_1.jpg"
+                  alt="NTWKD app screens"
+                />
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button
+                class="carousel-btn prev"
+                data-carousel-control="ntwkd"
+                aria-label="Previous"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="carousel-btn next"
+                data-carousel-control="ntwkd"
+                aria-label="Next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-indicators" data-carousel-indicators="ntwkd">
+            <!-- Indicators generated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem / Solution -->
+      <section class="resume-section">
+        <h2>The Challenge</h2>
+        <div class="about-content">
+          <p class="p-text">
+            Paper business cards are easy to lose and impossible to update. The
+            goal was a frictionless way to share rich, up-to-date contact
+            details in person or remotely, while letting one person keep
+            separate cards for different contexts — work, side projects, social.
+          </p>
+        </div>
+        <h2>The Solution</h2>
+        <div class="about-content">
+          <p class="p-text">
+            NTWKD gives each user up to five distinct cards, each generating a
+            scannable QR code that opens the card instantly. Cards support
+            photos, social links, and website integration, and can export
+            straight into the phone's native contacts. Subscriptions and secure
+            payments are handled in-app, with Firebase backing auth and data and
+            Method Channels bridging to native platform features.
+          </p>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="resume-section">
+        <h2>Key Features</h2>
+        <ul style="margin-left: 1.5rem; color: var(--neutral-600)">
+          <li>Create and customize up to 5 unique contact cards</li>
+          <li>Generate custom QR codes for easy sharing</li>
+          <li>Social media and website integration</li>
+          <li>Photo integration for contact cards</li>
+          <li>Export contacts to phone contacts</li>
+          <li>Subscription model with secure payments</li>
+        </ul>
+      </section>
+
+      <!-- Tech -->
+      <section class="resume-section">
+        <h2>Tech Stack</h2>
+        <div class="project-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Dart</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">QR Codes</span>
+          <span class="tag">Material 3</span>
+          <span class="tag">Riverpod</span>
+          <span class="tag">Method Channels</span>
+          <span class="tag">Production</span>
+        </div>
+      </section>
+
+      <!-- Role -->
+      <section class="resume-section">
+        <h2>My Role</h2>
+        <div class="about-content">
+          <p class="p-text">
+            I worked as a mobile developer on the app, building Flutter UI in
+            Material 3, wiring Firebase auth and data, managing state with
+            Riverpod, and integrating native platform features through Method
+            Channels — through to App Store and Google Play release and ongoing
+            maintenance.
+          </p>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="resume-section">
+        <div class="text-center" style="margin-top: 2rem">
+          <a href="../contact.html" class="btn btn-primary">
+            <i class="fas fa-handshake"></i>
+            Let's Collaborate
+          </a>
+          <a href="../projects.html" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i>
+            Back to Projects
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 Justin Goshorn. Built with passion and lots of coffee ☕
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

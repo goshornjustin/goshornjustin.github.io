@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ad0d2d0fa4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../scripts/index.js"></script>
+    <title>One-Tank Propane Monitoring App | Justin Goshorn</title>
+    <meta
+      name="description"
+      content="One-Tank case study — a Flutter IoT app for real-time propane tank monitoring of levels, temperature, and environmental data with intelligent alerts."
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-content">
+        <a href="../../index.html" class="logo">Justin</a>
+        <ul class="nav-links">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#skills">Skills</a></li>
+          <li>
+            <a href="../../index.html#projects" class="active">Projects</a>
+          </li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>One-Tank — Propane Monitoring App</h1>
+        <p>Real-time IoT tracking of tank levels, temperature &amp; alerts</p>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="page-content">
+      <!-- Overview -->
+      <section class="resume-section">
+        <h2>Overview</h2>
+        <div class="about-content">
+          <p class="p-text">
+            One-Tank is a propane tank monitoring app that enables real-time
+            tracking of tank levels, temperature, and environmental data, with
+            intelligent alerts and notifications when readings cross meaningful
+            thresholds. A Flutter front end talks to an ASP.NET REST backend
+            feeding live sensor data.
+          </p>
+        </div>
+
+        <!-- At a glance -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+          "
+        >
+          <div class="skill-card">
+            <h4 style="color: var(--primary-600)">Role</h4>
+            <p>Mobile developer</p>
+          </div>
+          <div class="skill-card">
+            <h4 style="color: var(--primary-600)">Platforms</h4>
+            <p>iOS &amp; Android</p>
+          </div>
+          <div class="skill-card">
+            <h4 style="color: var(--primary-600)">Stack focus</h4>
+            <p>Flutter, Riverpod, REST API, ASP.NET</p>
+          </div>
+          <div class="skill-card">
+            <h4 style="color: var(--primary-600)">Domain</h4>
+            <p>IoT / real-time sensor data</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="resume-section">
+        <h2>Gallery</h2>
+        <div class="project-carousel">
+          <div class="carousel-container">
+            <div class="carousel-track" data-carousel="one_tank">
+              <div class="carousel-slide">
+                <img
+                  src="../../assets/portfolio/one_tank/one_tank1.png"
+                  alt="One-Tank screen 1"
+                />
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="../../assets/portfolio/one_tank/one_tank2.png"
+                  alt="One-Tank screen 2"
+                />
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="../../assets/portfolio/one_tank/one_tank3.png"
+                  alt="One-Tank screen 3"
+                />
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="../../assets/portfolio/one_tank/one_tank4.png"
+                  alt="One-Tank screen 4"
+                />
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="../../assets/portfolio/one_tank/one_tank5.png"
+                  alt="One-Tank screen 5"
+                />
+              </div>
+              <div class="carousel-slide">
+                <img
+                  src="../../assets/portfolio/one_tank/one_tank6.png"
+                  alt="One-Tank screen 6"
+                />
+              </div>
+            </div>
+            <div class="carousel-controls">
+              <button
+                class="carousel-btn prev"
+                data-carousel-control="one_tank"
+                aria-label="Previous"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button
+                class="carousel-btn next"
+                data-carousel-control="one_tank"
+                aria-label="Next"
+              >
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-indicators" data-carousel-indicators="one_tank">
+            <!-- Indicators generated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem / Solution -->
+      <section class="resume-section">
+        <h2>The Challenge</h2>
+        <div class="about-content">
+          <p class="p-text">
+            Running out of propane unexpectedly — or missing a temperature
+            anomaly — is costly and inconvenient. Owners needed a way to see
+            tank status at a glance from their phone and be warned before a
+            problem became an emergency, using live data from physical sensors.
+          </p>
+        </div>
+        <h2>The Solution</h2>
+        <div class="about-content">
+          <p class="p-text">
+            One-Tank streams sensor readings through an ASP.NET REST API into a
+            Flutter app, rendering custom charts of tank level, temperature, and
+            environmental data in real time. An intelligent alert system pushes
+            notifications when readings cross configured thresholds, and
+            Riverpod keeps the live state consistent across the UI.
+          </p>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="resume-section">
+        <h2>Key Features</h2>
+        <ul style="margin-left: 1.5rem; color: var(--neutral-600)">
+          <li>Real-time tank readings</li>
+          <li>Intelligent alert system</li>
+          <li>Custom tank data charts</li>
+          <li>Mobile tank monitoring</li>
+          <li>Temperature and environmental tracking</li>
+        </ul>
+      </section>
+
+      <!-- Tech -->
+      <section class="resume-section">
+        <h2>Tech Stack</h2>
+        <div class="project-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Dart</span>
+          <span class="tag">Riverpod</span>
+          <span class="tag">REST API</span>
+          <span class="tag">ASP.Net</span>
+          <span class="tag">Real-time</span>
+          <span class="tag">Alerts and notifications</span>
+        </div>
+      </section>
+
+      <!-- Role -->
+      <section class="resume-section">
+        <h2>My Role</h2>
+        <div class="about-content">
+          <p class="p-text">
+            I built the Flutter app — consuming the ASP.NET REST API, rendering
+            real-time charts of sensor data, managing live state with Riverpod,
+            and implementing the threshold-based alert and notification system.
+          </p>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="resume-section">
+        <div class="text-center" style="margin-top: 2rem">
+          <a href="../contact.html" class="btn btn-primary">
+            <i class="fas fa-handshake"></i>
+            Let's Collaborate
+          </a>
+          <a href="../projects.html" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i>
+            Back to Projects
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 Justin Goshorn. Built with passion and lots of coffee ☕
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
