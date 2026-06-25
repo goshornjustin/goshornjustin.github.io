@@ -23,11 +23,13 @@
   --accent-blue: #2563eb;
   /* Reserved for hero / page-header only */
   --gradient: linear-gradient(135deg, var(--navy) 0%, var(--accent-blue) 100%);
-  
+
   /* Typography */
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui,
+    sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", Consolas, Monaco, monospace;
-  
+
   /* Spacing */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -38,19 +40,22 @@
   --space-12: 3rem;
   --space-16: 4rem;
   --space-20: 5rem;
-  
+
   /* Border Radius */
   --radius-sm: 0.25rem;
   --radius-md: 0.375rem;
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
   --radius-2xl: 1rem;
-  
+
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 * {
@@ -136,7 +141,7 @@ nav {
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -161,7 +166,7 @@ nav {
   .nav-toggle {
     display: block;
   }
-  
+
   .nav-links {
     display: none;
     position: absolute;
@@ -175,7 +180,7 @@ nav {
     border-top: 1px solid var(--neutral-200);
     gap: var(--space-4);
   }
-  
+
   .nav-links.active {
     display: flex;
   }
@@ -192,7 +197,7 @@ nav {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -248,6 +253,118 @@ nav {
   margin-right: auto;
 }
 
+/* ===== Hero intro animation ===== */
+.profile-wrap {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.matrix-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.matrix-canvas.fade-out {
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+/* Terminal prompt + cursor injected by JS */
+.tw-prompt {
+  font-family: var(--font-mono);
+  opacity: 0.7;
+  margin-right: 0.5ch;
+}
+
+.tw-cursor {
+  font-family: var(--font-mono);
+  display: inline-block;
+  width: 0.6ch;
+  margin-left: 1px;
+  animation: tw-blink 1s steps(1) infinite;
+}
+
+@keyframes tw-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Intro mode: hide animated bits until JS reveals them (no-flash) */
+html.intro .hero .matrix-canvas {
+  opacity: 1;
+}
+html.intro .profile-image {
+  opacity: 0;
+}
+html.intro .hero h1,
+html.intro .hero .subtitle,
+html.intro .hero .cta-buttons {
+  opacity: 0;
+}
+html.intro .hero .description {
+  visibility: hidden;
+}
+
+/* JS reveals by adding .intro-show */
+html.intro .profile-image {
+  transition: opacity 0.9s ease;
+}
+html.intro .profile-image.intro-show {
+  opacity: 1;
+}
+html.intro .hero h1.intro-show,
+html.intro .hero .subtitle.intro-show,
+html.intro .hero .cta-buttons.intro-show {
+  animation: heroFadeUp 0.6s ease both;
+}
+html.intro .hero .description.typing,
+html.intro .hero .description.typed {
+  visibility: visible;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.intro .hero h1,
+  html.intro .hero .subtitle,
+  html.intro .hero .cta-buttons,
+  html.intro .profile-image {
+    opacity: 1;
+    animation: none;
+  }
+  html.intro .hero .description {
+    visibility: visible;
+  }
+  html.intro .hero .matrix-canvas {
+    display: none;
+  }
+  .tw-cursor {
+    animation: none;
+  }
+}
+
 .cta-buttons {
   display: flex;
   gap: var(--space-4);
@@ -265,7 +382,11 @@ nav {
   border-radius: var(--radius-xl);
   font-weight: 600;
   font-size: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, background 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease,
+    background 0.3s ease;
   border: none;
   cursor: pointer;
   position: relative;
@@ -274,13 +395,18 @@ nav {
 }
 
 .btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
   transition: left 0.4s ease;
   will-change: left;
 }
@@ -358,7 +484,7 @@ nav {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -var(--space-4);
   left: 50%;
@@ -390,7 +516,7 @@ nav {
 }
 
 .skill-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -471,13 +597,17 @@ nav {
 }
 
 .project-image::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 .project-image img {
@@ -539,7 +669,7 @@ nav {
 }
 
 .project-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -712,32 +842,50 @@ footer p {
 }
 
 /* Utility Classes */
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
 
-.mb-4 { margin-bottom: var(--space-4); }
-.mb-8 { margin-bottom: var(--space-8); }
-.mb-12 { margin-bottom: var(--space-12); }
+.mb-4 {
+  margin-bottom: var(--space-4);
+}
+.mb-8 {
+  margin-bottom: var(--space-8);
+}
+.mb-12 {
+  margin-bottom: var(--space-12);
+}
 
-.mt-4 { margin-top: var(--space-4); }
-.mt-8 { margin-top: var(--space-8); }
-.mt-12 { margin-top: var(--space-12); }
+.mt-4 {
+  margin-top: var(--space-4);
+}
+.mt-8 {
+  margin-top: var(--space-8);
+}
+.mt-12 {
+  margin-top: var(--space-12);
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .container {
     padding: 0 var(--space-4);
   }
-  
+
   .hero {
     padding: 6rem 0 4rem;
   }
-  
+
   .section {
     padding: var(--space-16) 0;
   }
-  
+
   .skills-grid,
   .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -749,45 +897,45 @@ footer p {
   .nav-content {
     padding: var(--space-3) var(--space-4);
   }
-  
+
   .hero {
     padding: 5rem 0 3rem;
   }
-  
+
   .section {
     padding: var(--space-12) 0;
   }
-  
+
   .section-title {
     margin-bottom: var(--space-12);
   }
-  
+
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
     gap: var(--space-6);
   }
-  
+
   .skill-card,
   .project-card {
     margin: 0 var(--space-2);
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .btn {
     width: 100%;
     max-width: 280px;
     justify-content: center;
   }
-  
+
   .interests {
     gap: var(--space-2);
   }
-  
+
   .interest-item {
     padding: var(--space-2) var(--space-4);
     font-size: 0.9rem;
@@ -907,7 +1055,9 @@ footer p {
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 .fade-in.visible {

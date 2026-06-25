@@ -44,18 +44,21 @@
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-content">
-          <img
-            src="./assets/images/1645490368685.jpg"
-            alt="Justin's Profile"
-            class="profile-image"
-          />
+          <div class="profile-wrap">
+            <img
+              src="./assets/images/1645490368685.jpg"
+              alt="Justin's Profile"
+              class="profile-image"
+            />
+            <canvas class="matrix-canvas" aria-hidden="true"></canvas>
+          </div>
           <h1>Hi, I'm Justin! 👋</h1>
           <p class="subtitle">Mobile Developer Consultant</p>
-          <p class="description">
-            I'm a full-stack developer with 3+ years of professional mobile
-            development experience. I create highly performant, cross-platform
-            applications and love exploring new technologies in mobile
-            development, web development, and game development.
+          <p class="description" data-typewriter>
+            I'm a full-stack developer with 3+ years of professional development
+            experience. I create highly performant, cross-platform applications
+            and love exploring new technologies in mobile development, web
+            development, and game development.
           </p>
           <div class="cta-buttons">
             <a href="#projects" class="btn btn-primary">
@@ -142,7 +145,10 @@
         <div class="projects-grid">
           <div class="project-card fade-in">
             <div class="project-image">
-              <img src="./assets/portfolio/ntwkd/ntwkd_presentation_1.jpg" alt="NTWKD contact card app" />
+              <img
+                src="./assets/portfolio/ntwkd/ntwkd_presentation_1.jpg"
+                alt="NTWKD contact card app"
+              />
             </div>
             <div class="project-content">
               <h3>NTWKD - Contact Card App</h3>
@@ -172,25 +178,27 @@
                   class="project-link"
                   >Google Play →</a
                 >
-                <a href="" class="project-link">Details →</a>
+                <a href="./pages/projects/ntwkd.html" class="project-link"
+                  >Details →</a
+                >
               </div>
             </div>
           </div>
           <div class="project-card fade-in">
             <div class="project-image">
-              <img src="./assets/portfolio/fit_life/fit_life_main_card.jpg" alt="" />
+              <img src="./assets/portfolio/wilcox/wilcox_header.png" alt="" />
             </div>
             <div class="project-content">
-              <h3>DP-CQS Weapon Reticle Application</h3>
+              <h3>Wilcox Industries - DP-CQS Weapon Reticle Application</h3>
               <p>
-                A cross platform mobile application created for and used by
-                military and DoD members to configure digital optics. The
-                application connects to digital optic via its firmware using
-                Bluetooth or USB connection. The user can load weapon profiles
-                with 3 separate reticle configs, edit the reticles and save
-                their changes. Changes would then be sent to the optic's
-                firmware. The app uses a ballistic data library to allow users
-                to configure bullet drop compensation lines on the reticles.
+                A cross platform mobile application created for and used by a
+                defense client to configure digital optics. The application
+                connects to digital optic via its firmware using Bluetooth or
+                USB connection. The user can load weapon profiles with 3
+                separate reticle configs, edit the reticles and save their
+                changes. Changes would then be sent to the optic's firmware. The
+                app uses a ballistic data library to allow users to configure
+                bullet drop compensation lines on the reticles.
               </p>
               <div class="project-tags">
                 <span class="tag">Flutter</span>
@@ -202,7 +210,7 @@
                 <span class="tag">Firmware Integrations</span>
               </div>
               <div class="project-links">
-                <a href="./pages/projects/fitness_app.html" class="project-link"
+                <a href="./pages/projects/wilcox_app.html" class="project-link"
                   >Details →</a
                 >
                 <!-- <a href="#" class="project-link">Live Demo →</a> -->
@@ -211,7 +219,10 @@
           </div>
           <div class="project-card fade-in">
             <div class="project-image">
-              <img src="./assets/portfolio/fit_life/fit_life_main_card.jpg" alt="" />
+              <img
+                src="./assets/portfolio/fit_life/fit_life_main_card.jpg"
+                alt=""
+              />
             </div>
             <div class="project-content">
               <h3>Health & Nutrition Intelligence App</h3>
@@ -239,7 +250,10 @@
           </div>
           <div class="project-card fade-in">
             <div class="project-image">
-              <img src="./assets/portfolio/one_tank/one_tank_main_card.jpg" alt="" />
+              <img
+                src="./assets/portfolio/one_tank/one_tank_header.png"
+                alt="One-Tank propane monitoring app"
+              />
             </div>
             <div class="project-content">
               <h3>One-Tank Propane Tank Monitoring App</h3>
@@ -267,10 +281,13 @@
           </div>
           <div class="project-card fade-in">
             <div class="project-image">
-              <img src="./assets/portfolio/popstock/popstock_main_card.jpg" alt="" />
+              <img
+                src="./assets/portfolio/popstock/popstock_main_card.jpg"
+                alt=""
+              />
             </div>
             <div class="project-content">
-              <h3>Educational FinTech Platform</h3>
+              <h3>PopStock - Educational FinTech Platform</h3>
               <p>
                 An innovative stock market education app for K-12 students
                 featuring animated lessons, interactive games, and event-driven
@@ -286,14 +303,11 @@
                 <span class="tag">Real-time trading</span>
                 <span class="tag">Alerts and notifications</span>
               </div>
-              <!-- <div class="project-links">
-                <a
-                  href="https://github.com/goshornjustin/DevDailyInspoCard"
-                  class="project-link"
-                  >GitHub →</a
+              <div class="project-links">
+                <a href="./pages/projects/popstock.html" class="project-link"
+                  >Details →</a
                 >
-                <a href="#" class="project-link">Live Site →</a>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -356,7 +370,7 @@
           <div class="cta-buttons">
             <a href="mailto:goshornjustin3@gmail.com" class="btn btn-primary">
               <i class="fas fa-envelope"></i>
-              Send Email
+              Email
             </a>
             <a href="./pages/resume.html" class="btn btn-primary">
               <i class="fas fa-file-alt"></i>
@@ -380,27 +394,11 @@
               <i class="fab fa-github"></i>
               GitHub
             </a>
-            <a
-              href="https://www.upwork.com/freelancers/~01538dd0ddc5607aa1"
-              class="btn btn-primary"
-              style="margin: 0 0.5rem"
-            >
-              <i class="fa-brands fa-x-twitter"></i>
-              @yaboyiscoding
-            </a>
-            <a
-              href="https://www.upwork.com/freelancers/~01538dd0ddc5607aa1"
-              class="btn btn-primary"
-              style="margin: 0 0.5rem"
-            >
+            <a href="" class="btn btn-primary" style="margin: 0 0.5rem">
               <i class="fa-brands fa-youtube"></i>
               @yaboyiscoding
             </a>
-            <a
-              href="https://www.upwork.com/freelancers/~01538dd0ddc5607aa1"
-              class="btn btn-primary"
-              style="margin: 0 0.5rem"
-            >
+            <a href="" class="btn btn-primary" style="margin: 0 0.5rem">
               <i class="fa-brands fa-x-twitter"></i>
               @yaboyiscoding
             </a>
