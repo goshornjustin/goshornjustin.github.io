@@ -15,7 +15,7 @@ Mobile Development specialist with 3+ years delivering production cross-platform
 
 ## Experience
 
-### Mobile Developer (Contract) | Wilcox Industries Corp. | Remote
+### Mobile Developer (Contract) | Confidential Defense Client | Remote
 *March 2026 – May 2026*
 
 - Architected and delivered an Android application enabling end users to configure a Close Quarters Sight.
